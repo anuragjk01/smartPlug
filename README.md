@@ -17,10 +17,13 @@ Or add to profile
 `alias get_idf='. $HOME/esp/esp-idf/export.sh'`
 
 `cd ~/esp`
+
 `cp -r $IDF_PATH/examples/get-started/hello_world .`
 
 `cd ~/esp/hello_world`
+
 `idf.py set-target esp32`
+
 `idf.py menuconfig`
 
 `$ idf.py build`
