@@ -1,11 +1,15 @@
 `sudo apt-get install git wget flex bison gperf python3 python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0`
 
 `mkdir -p ~/esp`
+
 `cd ~/esp`
+
 `git clone -b v5.2.1 --recursive https://github.com/espressif/esp-idf.git`
 
 `cd ~/esp/esp-idf`
+
 `export IDF_GITHUB_ASSETS="dl.espressif.com/github_assets"`
+
 `export IDF_TOOLS_PATH="/installation/path"    # default path $HOME/.espressif`
 
 `./install.sh esp32`
@@ -32,6 +36,7 @@ Or add to profile
                                 # PORT is /dev/ttyUSB0 or whichever device ESP is connected to
 
 `$ idf.py -p <PORT> monitor`
+                                # For exiting monitor "Ctrl+]"
 
 
 
