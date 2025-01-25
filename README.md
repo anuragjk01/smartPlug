@@ -38,6 +38,9 @@ Or add to profile
 `$ idf.py -p <PORT> monitor`
                                 # For exiting monitor "Ctrl+]"
 
+If terminal shows error "Path '/dev/ttyXXX' is not readable"
+then try again after modifying the permission
+`$ sudo chmod a+rw <PORT>`
 
 
 
