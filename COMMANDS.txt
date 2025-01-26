@@ -1,0 +1,3 @@
+idf.py clean will “clean” the project by deleting build output files from the build directory, forcing a “full rebuild” the next time the project is built. Cleaning doesn’t delete CMake configuration output and some other files.
+
+idf.py fullclean will delete the entire “build” directory contents. This includes all CMake configuration output. The next time the project is built, CMake will configure it from scratch. Note that this option recursively deletes all files in the build directory, so use with care. Project configuration is not deleted.

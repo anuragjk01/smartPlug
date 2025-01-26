@@ -28,6 +28,9 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 cd ~/esp
 cp -r $IDF_PATH/examples/get-started/hello_world .
 `
+
+note: IDF_PATH=/home/anuragjk/esp/esp-idf
+
 `
 cd ~/esp/hello_world
 idf.py set-target esp32
