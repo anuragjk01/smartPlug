@@ -1,3 +1,41 @@
 idf.py clean will “clean” the project by deleting build output files from the build directory, forcing a “full rebuild” the next time the project is built. Cleaning doesn’t delete CMake configuration output and some other files.
 
 idf.py fullclean will delete the entire “build” directory contents. This includes all CMake configuration output. The next time the project is built, CMake will configure it from scratch. Note that this option recursively deletes all files in the build directory, so use with care. Project configuration is not deleted.
+
+
+=======
+
+Docker commands
+---------------
+
+docker ps -a   
+	- Show all running docker containers
+docker start|stop <container_name> (or <container-id>)
+	- Start/Stop container
+docker rm <container_name>
+	- Remove a stopped container
+docker images
+	- List local images
+docker rmi <image_name>
+	- Delete an Image
+docker exec -it <container_name> sh
+	- Open a shell inside a running container
+
+
+docker build -t <image_name> .
+	- Build an Image from a Dockerfile
+
+docker run -it --rm -v .:/src <image name>
+	-i for interactive
+	-t for psudo tty
+	--rm to delete container after exiting
+	-v to mount volumes
+
+docker builder prune
+	- removes all builder related caches
+
+========
+
+vi Dockerfile
+sudo docker build -t esp-container .
+
